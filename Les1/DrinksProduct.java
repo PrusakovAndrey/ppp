@@ -23,6 +23,9 @@ public class DrinksProduct extends Product{
     public String toString() {
         return super.toString()+"Drinks [volume=" + volume + ", pack=" + pack + ", gas=" + gas + "]";
     }
+    public void setVolume(int volume) {
+        this.volume = volume;
+    }
 
     
 }

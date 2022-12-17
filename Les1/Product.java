@@ -42,7 +42,8 @@ public class Product {
         "name = '" + name + '\'' +
         ", price = '" + price +
         ", number = '" + number +
-        "}";
+        "} !!!";
     }
 
+    
 }
