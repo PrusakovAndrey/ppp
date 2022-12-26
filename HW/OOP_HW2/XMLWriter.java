@@ -15,8 +15,8 @@ public class XMLWriter extends Writer{
         try (FileWriter writer = new FileWriter("notesXML.xml", false)) {
             writer.write("<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<students>");
             for (Map.Entry<String, String> entry : list.entrySet()) {
-                writer.write("\n<student>\n<name>"+entry.getKey()+"</name>" + "\n<grade>" + entry.getValue()+"</grade>");
-                writer.append("\n</student>");
+                writer.write("\n\t<student>\n\t\t<name>"+entry.getKey()+"</name>" + "\n\t\t<grade>" + entry.getValue()+"</grade>");
+                writer.append("\n\t</student>");
             }
             writer.write("\n</students>");
             writer.close();
