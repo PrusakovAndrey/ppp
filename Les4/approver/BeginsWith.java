@@ -4,15 +4,15 @@ package approver;
 // Ему дают строку, он проверяет, 
 // что она начинается с того, что он запомнил
 
-public class BeginsWith<T> implements IsGood<T> {
-    private T str;
+public class BeginsWith<Elem> implements IsGood<Elem> {
+    private Elem str;
     
-    public BeginsWith(T str){
+    public BeginsWith(Elem str){
         this.str = str;
     }
     
     @Override
-    public boolean isGood(T text) {
+    public boolean isGood(Elem text) {
         if( ((String) str).equals((String) text)){
             return true;
         }
